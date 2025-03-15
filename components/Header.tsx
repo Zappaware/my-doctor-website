@@ -10,31 +10,31 @@ export default function Header() {
     <header className="bg-white shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="text-xl md:text-2xl font-bold text-[#1C1C1C]">
+        <Link href="/" className="text-xl md:text-2xl font-bold text-[#53b3e7]">
           Dr. Luis A. Rincón Gutiérrez
         </Link>
 
         {/* Menú de navegación (Desktop) */}
         <nav className="hidden md:flex space-x-4">
-          <Link href="/services" className="text-[#747474] hover:text-[#26B995]">
+          <Link href="/services" className="text-[#747474] hover:text-yellow-200">
             Servicios
           </Link>
-          <Link href="/about" className="text-[#747474] hover:text-[#26B995]">
+          <Link href="/about" className="text-[#747474] hover:text-yellow-200">
             Acerca de mí
           </Link>
-          <Link href="/blog" className="text-[#747474] hover:text-[#26B995]">
+          <Link href="/blog" className="text-[#747474] hover:text-yellow-200">
             Blog
           </Link>
-          <Link href="/conferences" className="text-[#747474] hover:text-[#26B995]">
+          <Link href="/conferences" className="text-[#747474] hover:text-yellow-200">
             Conferencias
           </Link>
-          <Link href="/contact" className="text-[#747474] hover:text-[#26B995]">
+          <Link href="/contact" className="text-[#747474] hover:text-yellow-200">
             Contacto
           </Link>
         </nav>
 
         {/* Botón de registro (Desktop) */}
-        <button className="hidden md:block bg-[#28BF98] text-white px-6 py-2 rounded-lg hover:bg-[#26B995]">
+        <button className="hidden md:block bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-yellow-200">
           Registro Nuevo
         </button>
 
@@ -51,19 +51,19 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <nav className="flex flex-col space-y-4 p-4">
-            <Link href="/services" className="text-[#747474] hover:text-[#26B995]">
+            <Link href="/services" className="text-[#747474] hover:text-yellow-200">
               Servicios
             </Link>
-            <Link href="/about" className="text-[#747474] hover:text-[#26B995]">
+            <Link href="/about" className="text-[#747474] hover:text-yellow-200">
               Acerca de mí
             </Link>
-            <Link href="/blog" className="text-[#747474] hover:text-[#26B995]">
+            <Link href="/blog" className="text-[#747474] hover:text-yellow-200">
               Blog
             </Link>
-            <Link href="/conferences" className="text-[#747474] hover:text-[#26B995]">
+            <Link href="/conferences" className="text-[#747474] hover:text-yellow-200">
               Conferencias
             </Link>
-            <Link href="/contact" className="text-[#747474] hover:text-[#26B995]">
+            <Link href="/contact" className="text-[#747474] hover:text-yellow-200">
               Contacto
             </Link>
             <button className="bg-[#28BF98] text-white px-6 py-2 rounded-lg hover:bg-[#26B995]">
