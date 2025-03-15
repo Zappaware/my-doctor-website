@@ -8,9 +8,9 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md fixed w-full z-50">
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-[#1C1C1C]">
+        <Link href="/" className="text-xl md:text-2xl font-bold text-[#1C1C1C]">
           Dr. Luis A. Rincón Gutiérrez
         </Link>
 
@@ -74,4 +74,4 @@ export default function Header() {
       )}
     </header>
   );
-};
+}

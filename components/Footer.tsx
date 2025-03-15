@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
           {/* Columna 1: Logo y descripción */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">My Logo</h2>
+            <h2 className="text-2xl font-bold mb-4">Dr. Internista</h2>
             <p className="text-[#ABEDDC]">
               Cuidando de tu salud con experiencia y dedicación.
             </p>

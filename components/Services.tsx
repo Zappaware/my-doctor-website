@@ -1,15 +1,15 @@
 export default function Services() {
   const services = [
-    { title: 'Expert Doctors', description: 'On what matters most free matching' },
-    { title: 'Free Support', description: 'An easy-to-use online directory' },
-    { title: 'Online Care', description: 'One-to-one matching for experience support' },
+    { title: 'Consulta Médica', description: 'Agenda en mi perfil de doctoralia' },
+    { title: 'Mentoría profesional', description: 'Mentoría para estudiantes y profecionales' },
+    { title: 'Cuidado Online', description: 'Servicios de cuidado uno a uno' },
   ];
 
   return (
     <section className="bg-white py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-[#1C1C1C] mb-8">
-          OUR SERVICES
+          MIS SERVICIOS
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
