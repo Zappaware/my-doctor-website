@@ -12,9 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={`${inter.className} pt-24`}> {/* Añadimos pt-24 */}
         <Header />
-        <main className="container mx-auto px-4 py-8">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

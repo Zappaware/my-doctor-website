@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
 }
 
 @theme inline {
@@ -20,7 +21,9 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: white; /* Fondo blanco para todo el body */
+  margin: 0; /* Eliminar márgenes predeterminados */
+  padding: 0; /* Eliminar paddings predeterminados */
 }
