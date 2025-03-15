@@ -14,29 +14,31 @@ export default function Header() {
           Dr. Luis A. Rincón Gutiérrez
         </Link>
 
-        {/* Menú de navegación (Desktop) */}
-        <nav className="hidden md:flex space-x-4">
-          <Link href="/services" className="text-[#747474] hover:text-yellow-200">
-            Servicios
-          </Link>
-          <Link href="/about" className="text-[#747474] hover:text-yellow-200">
-            Acerca de mí
-          </Link>
-          <Link href="/blog" className="text-[#747474] hover:text-yellow-200">
-            Blog
-          </Link>
-          <Link href="/conferences" className="text-[#747474] hover:text-yellow-200">
-            Conferencias
-          </Link>
-          <Link href="/contact" className="text-[#747474] hover:text-yellow-200">
-            Contacto
-          </Link>
-        </nav>
+        <div className="hidden md:flex items-center space-x-4">
+          {/* Menú de navegación (Desktop) */}
+          <nav className="flex space-x-4">
+            <Link href="/services" className="text-[#747474] hover:text-yellow-200">
+              Servicios
+            </Link>
+            <Link href="/about" className="text-[#747474] hover:text-yellow-200">
+              Acerca de mí
+            </Link>
+            <Link href="/blog" className="text-[#747474] hover:text-yellow-200">
+              Blog
+            </Link>
+            <Link href="/conferences" className="text-[#747474] hover:text-yellow-200">
+              Conferencias
+            </Link>
+            <Link href="/contact" className="text-[#747474] hover:text-yellow-200">
+              Contacto
+            </Link>
+          </nav>
 
-        {/* Botón de registro (Desktop) */}
-        <button className="hidden md:block bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-yellow-200">
-          Registro Nuevo
-        </button>
+          {/* Botón de registro (Desktop) */}
+          <button className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-yellow-200">
+            Registro Nuevo
+          </button>
+        </div>
 
         {/* Ícono de menú (Mobile) */}
         <button
