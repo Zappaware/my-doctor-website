@@ -1,7 +1,7 @@
 export default function Services() {
   const services = [
-    { title: 'Consulta Médica', description: 'Agenda en mi perfil de doctoralia' },
-    { title: 'Mentoría profesional', description: 'Mentoría para estudiantes y profecionales' },
+    { title: 'Consulta Médica', description: 'Agenda en mi perfil de Doctoralia' },
+    { title: 'Mentoría profesional', description: 'Mentoría para estudiantes y profesionales' },
     { title: 'Cuidado Online', description: 'Servicios de cuidado uno a uno' },
   ];
 

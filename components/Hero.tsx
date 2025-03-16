@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
 export default function Hero() {
   return (
     <section className="bg-blue-400 py-20 pt-24">
@@ -22,15 +24,23 @@ export default function Hero() {
               Consulta mis servicios médicos
             </h1>
             <p className="text-white mb-8 text-sm md:text-base">
-              Estamos para ayudarte con tus necesidades médicas.
+              Estamos para ayudarte con tus necesidades preparación profesional.
             </p>
             <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-yellow-200">
+              <Button 
+                variant="default"
+                size="lg"
+                className="bg-blue-700 hover:bg-yellow-200 hover:text-blue-700"
+              >
                 Consigue una cita
-              </button>
-              <button className="bg-white text-blue-700 px-6 py-3 rounded-lg hover:bg-yellow-200">
+              </Button>
+              <Button 
+                variant="secondary"
+                size="lg"
+                className="bg-white text-blue-700 hover:bg-yellow-200"
+              >
                 Contacta con nosotros
-              </button>
+              </Button>
             </div>
           </div>
         </div>
