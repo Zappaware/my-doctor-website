@@ -14,7 +14,7 @@ export default function Header() {
           Dr. Luis A. Rincón Gutiérrez
         </Link>
 
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           {/* Menú de navegación (Desktop) */}
           <nav className="flex space-x-4">
             <Link href="/services" className="text-[#747474] hover:text-yellow-200">
@@ -42,7 +42,7 @@ export default function Header() {
 
         {/* Ícono de menú (Mobile) */}
         <button
-          className="md:hidden text-[#1C1C1C]"
+          className="lg:hidden text-[#1C1C1C]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -51,7 +51,7 @@ export default function Header() {
 
       {/* Menú de navegación (Mobile) */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="lg:hidden bg-white shadow-lg">
           <nav className="flex flex-col space-y-4 p-4">
             <Link href="/services" className="text-[#747474] hover:text-yellow-200">
               Servicios
