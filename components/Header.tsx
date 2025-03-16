@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Activity } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,8 @@ export default function Header() {
     <header className="bg-white shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="text-xl md:text-2xl font-bold text-[#53b3e7]">
+        <Link href="/" className="text-xl md:text-2xl font-bold text-[#53b3e7] flex items-center gap-2">
+          <Activity size={24} />
           Dr. Luis A. Rincón Gutiérrez
         </Link>
 
