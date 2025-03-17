@@ -8,11 +8,15 @@ export default function BlogPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Ejemplo de artículo del blog */}
           <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-            <div className="bg-gray-100 h-48">
+            <div className="bg-gray-100 h-48 relative">
               {/* Placeholder para la imagen del artículo */}
-              <div className="w-full h-full flex items-center justify-center text-gray-400">
-                <Image src="/electro.png" alt="Doctor" width={400} height={250} />
-              </div>
+              <Image
+                src="/electro.png"
+                alt="Doctor"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+              />
             </div>
             <div className="p-6">
               <h2 className="text-xl font-semibold text-[#747474] mb-2 py-5">
@@ -33,4 +37,4 @@ export default function BlogPage() {
       </div>
     </main>
   );
-} 
+}

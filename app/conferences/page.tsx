@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function ConferencesPage() {
   return (
@@ -12,8 +12,14 @@ export default function ConferencesPage() {
               <div className="md:w-1/3">
                 <div className="bg-gray-100 h-48 rounded-lg">
                   {/* Placeholder para la imagen de la conferencia */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    <Image src="/medicina-prev.jpg" alt="Doctor" width={392} height={250} />
+                  <div className="w-full h-full flex items-center justify-center text-gray-400 relative">
+                    <Image
+                      src="/medicina-prev.jpg"
+                      alt="Doctor"
+                      layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
+                    />
                   </div>
                 </div>
               </div>
@@ -27,8 +33,9 @@ export default function ConferencesPage() {
                   <span>📍 Centro de Convenciones</span>
                 </div>
                 <p className="text-gray-600">
-                  Únete a esta conferencia donde discutiremos los últimos avances 
-                  en medicina preventiva y cómo implementarlos en la práctica diaria.
+                  Únete a esta conferencia donde discutiremos los últimos
+                  avances en medicina preventiva y cómo implementarlos en la
+                  práctica diaria.
                 </p>
                 <button className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-yellow-200 transition-colors">
                   Registrarse
@@ -40,4 +47,4 @@ export default function ConferencesPage() {
       </div>
     </main>
   );
-} 
+}
